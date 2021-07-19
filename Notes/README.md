@@ -32,7 +32,11 @@ Typescript is the programming language we use when building Angular app
 
     - **Metadata:** provides additional info to Angular.
 
-- **Services** provides functionality across those componnets, such as access data from a backend server and standard login.
+- **Services** provides functionality across those componnets, such as access data from a backend server and standard login.<br/>
+    *Used for features that:*<br/>
+    - Are independent from any particular component
+    - Provide shared data or logic across components
+    - Encapsulate external interactions such as data access
 
 ---
 ## Other
@@ -82,3 +86,6 @@ OnInit: perform component initialization, retrieve data
 OnChanges: perform action after change to input properties. (after angular sets data-bound input properties)
 
 OnDestroy: perform cleanup before Angular destroys the component
+
+### *Dependency Injection:*
+A coding pattern in which a class receives the instance of objects it needs (called dependencies) from an external source rather than creating them itself. (In Angular, this external source is Angular injector)
