@@ -46,3 +46,16 @@ JS is the language for the web.
     Typescript implements ES 2015 class-based object orientation, plus more. It implements classes, interfaces, inheritances.
 
 ``` Install VS code, npm (install it by installing node)```
+
+---
+** Data binding**: 
+Interpolation: `{{pageTitle}}` , inserts interpolated strings into the text between HTML elements or assigns element properties.
+
+Property binding: `<img [src]='product.imageUrl'>` , sets an HTML element property to the value of a template expression.
+
+Event binding: `<button (click)='toggleImage()>` , listens for events from the UI and executes a component method when the event occurs.
+
+Two-way binding: `<input [(ngModel)]='listFilter />` , displays a componenet property and updates that property when the user makes a change in an input element.
+
+
+**Pipes:** When data is not in the format appropriate for display, we use pipes. Pipes transform bound propertis before display. (Built-in pipes: date, number, decimal, percent, currency, json, etc.)
