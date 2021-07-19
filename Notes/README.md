@@ -61,3 +61,9 @@ JS is the language for the web.
 
 ### *Pipes:* 
 When data is not in the format appropriate for display, we use pipes. Pipes transform bound propertis before display. (Built-in pipes: date, number, decimal, percent, currency, json, etc.)
+
+### *Interface:*
+An interface is a specification identifying a related set of properties and methods. 
+Two primary ways to use an interface: 
+1. Use an interface to identify the properties for a specific type. Ex: have all the properties for the product object in an interface, and in the component class, we can define the type as the interface.
+2. Use an interface to identify a feature set. We declare the properties and methods required to implement a specific feature. Declarations only, no code.
