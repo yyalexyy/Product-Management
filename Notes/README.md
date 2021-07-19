@@ -67,3 +67,18 @@ An interface is a specification identifying a related set of properties and meth
 Two primary ways to use an interface: 
 1. Use an interface to identify the properties for a specific type. Ex: have all the properties for the product object in an interface, and in the component class, we can define the type as the interface.
 2. Use an interface to identify a feature set. We declare the properties and methods required to implement a specific feature. Declarations only, no code.
+
+
+### *Component Lifecycle:*
+Create -> Render -> Create and render children, process changes (when its data-bound properties change) -> destroy (it before removing its template from DOM)
+
+LifeCycle hook: an interface we implement to write code when a component lifecycle event occurs.
+Ex: when a component is first created and initialized, we may want to get the data from the page. 
+So, we implement the OnInit lifecycle hook and write code in that hook method to get our data.
+
+*3 common lifecycle hooks:*<br/>
+OnInit: perform component initialization, retrieve data
+
+OnChanges: perform action after change to input properties. (after angular sets data-bound input properties)
+
+OnDestroy: perform cleanup before Angular destroys the component
